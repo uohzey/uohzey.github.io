@@ -31,7 +31,8 @@
 
 <script>
 import { before_time } from '@/utils/common'
-  export default {
+import { defineComponent } from '@vue/runtime-core';
+  export default defineComponent( {
   data() {
     return {
 
@@ -63,7 +64,7 @@ import { before_time } from '@/utils/common'
         this.$router.push(`/labels/${labelId}/${labelName}`)
       }
   },
-}
+})
 </script>
 
 <style scoped>
