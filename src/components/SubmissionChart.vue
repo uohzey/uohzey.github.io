@@ -1,5 +1,10 @@
 <template>
     <div class="submission-chart">
+        <div class="users-header">
+            <h3>
+                贡献度
+            </h3>
+        </div>
         <div class="calendar">
             <div class="weeks">
                 <div class="week">周二</div>
@@ -165,6 +170,10 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.users-header{
+    position: flex;
+    right: 0%;
+}
 .submission-chart {
     width: 820px;
     height: 180px;
