@@ -32,10 +32,11 @@
         </div>
         <a href="#about" class="scroll-down">Scroll Down<i class="fa fa-arrow-down"></i></a>
     </section>
+    <!-- About section -->
     <section class="about section" id="about">
         <div class="container flex-center">
-            <h1 class="section-title-01"></h1>
-            <h2 class="section-title-02"></h2>
+            <h1 class="section-title-01">About me</h1>
+            <h2 class="section-title-02">About me</h2>
             <div class="content flex-center">
                 <div class="about-img">
                     <img src="@/images/about-img.jpg" alt="">
@@ -65,23 +66,26 @@
             </div>
         </div>
     </section>
-    <submission-chart :profile="profile"></submission-chart>
+    <!-- <submission-chart :profile="profile"></submission-chart> -->
 </template>
 
 <script>
 import { defineComponent } from "@vue/runtime-core"
-import SubmissionChart from "./SubmissionChart.vue"
+// import SubmissionChart from "./SubmissionChart.vue"
 export default defineComponent({
     name: 'MyHeader',
-    components: { SubmissionChart },
+    // components: { SubmissionChart },
     data() {
         return {
-            profile: [{
-                '2022-01-01': 10
-            }],
+            profile: [
+                {
+                    date: '2022-01-01',
+                    status: 13
+                }
+            ],
             size: 2,
         }
-    }
+    },
 })
 </script>
 

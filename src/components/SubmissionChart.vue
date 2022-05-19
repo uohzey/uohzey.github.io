@@ -123,16 +123,14 @@ export default {
         },
         formatProblemData() {
             let submissionRecord = {}
-            // let OIProblems = this.profile.oi_problems_status.problems || {}
-            // // 格式化profile中oi的提交记录数据，创建submissionRecord对象，将create_time作为key进行存储
-            // Object.keys(OIProblems).forEach(problemID => {
-            //     if (OIProblems[problemID]['status'] === 0) {
-            //         let date = moment(OIProblems[problemID]['create_time']).format('YYYY-MM-DD')
-            //         // 第一次出现提交次数设置1，之后每次出现提交次数+1
-            //         submissionRecord[date.toString()] = submissionRecord[date] ? ((submissionRecord[date])) + 1 : 1
-            //     }
-            // })
-
+            let OIProblems = this.profile || {}
+            // 格式化profile中oi的提交记录数据，创建submissionRecord对象
+            Object.keys(OIProblems).forEach(problemID => {
+                if (OIProblems[problemID]['status'] !== 0) {
+                    let date = moment(OIProblems[problemID]['date']).format('YYYY-MM-DD')
+                    submissionRecord[date.toString()] = OIProblems[problemID]['status']
+                }
+            })
             // 处理你的业务逻辑
             // submissionRecord 最后的格式应为 {'2020-01-01':10, '2020-01-02': 11}
             this.submissionRecord = submissionRecord
