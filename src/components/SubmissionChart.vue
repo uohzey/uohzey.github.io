@@ -2,7 +2,7 @@
     <div class="submission-chart">
         <div class="users-header">
             <h3>
-                贡献度
+                gitee贡献度
             </h3>
         </div>
         <div class="calendar">
@@ -28,7 +28,7 @@
                     <Slider :value="sliderValue" :max="12" range :tip-format="sliderFormat" @on-change="sliderChange">
                     </Slider>
                 </div>
-                <div class="slider-desc">12+</div>
+                <div class="slider-desc">9+</div>
             </div>
             <div class="legend">
                 <div class="level-desc">少</div>
@@ -39,6 +39,11 @@
                 <div class="level level-5"></div>
                 <div class="level-desc">多</div>
             </div>
+        </div>
+        <div class="contribution-describtion">
+            <p>最近一年贡献: {{times.longest}} 次</p>
+            <p>最长连续贡献:{{times.longestContinuous}}日</p>
+            <p>最近连续贡献:{{times.latestContinuous}}日</p>
         </div>
     </div>
 </template>
@@ -59,7 +64,8 @@ export default {
             // eslint-disable-next-line vue/require-valid-default-prop
             default: {},
             type: Object
-        }
+        },
+        times:{},
     },
     mounted() {
         this.formatProblemData()
@@ -144,11 +150,11 @@ export default {
             // level color
             // 左闭右开
             let color = '#EBEDF0'
-            if (number >= 12) {
+            if (number >= 9) {
                 color = '#196127'
-            } else if (number >= 8) {
+            } else if (number >= 6) {
                 color = '#239A3B'
-            } else if (number >= 4) {
+            } else if (number >= 3) {
                 color = '#7BC96F'
             } else if (number >= 1) {
                 color = '#C6E48B'
@@ -170,9 +176,14 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.users-header{
-    position: flex;
-    right: 0%;
+.users-header h3{
+    font-size: 2em;
+    line-height: 70px;
+    text-align: left;
+}
+.contribution-describtion{
+    display: flex;
+    column-gap: 50px;
 }
 .submission-chart {
     width: 820px;

@@ -59,6 +59,22 @@ li {
     list-style: none;
 }
 
+/* =======Scrolll bar====== */
+/* =======滚动条======= */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb-hover-color);
+}
+
 /*=====Header======*/
 header {
     z-index: 99999;
@@ -68,6 +84,12 @@ header {
     left: 0;
     backdrop-filter: blur(20px);
     transition: .6s ease;
+}
+
+/* 标题显示是,底线有阴影 */
+header.sticky {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .nav-bar {
@@ -81,6 +103,10 @@ header {
     margin-right: auto;
     padding: 0 20px;
     transition: .6s ease;
+}
+
+header.sticky .nav-bar {
+    height: calc(2.5rem + 1rem);
 }
 
 .nav-bar .logo {
@@ -212,7 +238,7 @@ header {
 
 .section {
     position: relative;
-    width: 1150px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 2rem 2rem;
@@ -248,7 +274,7 @@ header {
     position: absolute;
     width: 70px;
     height: 5px;
-    right: 41%;
+    right: 0;
     bottom: 0;
     background: var(--second-color);
 }
