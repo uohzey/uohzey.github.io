@@ -1,24 +1,8 @@
-# personal-blog
+## 项目日志
 
-## Project setup
-```
-npm install
-```
+### 2022
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### 0523
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 将项目由传统模块式编程转换成vue结构的组件化编程
+- 将css文件拆分到各个vue文件当中.

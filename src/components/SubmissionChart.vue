@@ -15,9 +15,6 @@
                 <div class="title">{{ columnData.title }}</div>
                 <div class="date-wrapper" v-for="(dateData, dateIndex) in columnData.data" :key="dateIndex"
                     :style="`background:${getColor(dateData.number)};`">
-                    <Tooltip placement="top" :delay="300" :content="`${dateData.date}：${dateData.number}次通过`">
-                        <div class="date"></div>
-                    </Tooltip>
                 </div>
             </div>
         </div>
@@ -25,8 +22,6 @@
             <div class="slider">
                 <div class="slider-desc">0</div>
                 <div style="width:120px;">
-                    <Slider :value="sliderValue" :max="12" range :tip-format="sliderFormat" @on-change="sliderChange">
-                    </Slider>
                 </div>
                 <div class="slider-desc">9+</div>
             </div>
@@ -41,9 +36,9 @@
             </div>
         </div>
         <div class="contribution-describtion">
-            <p>最近一年贡献: {{times.longest}} 次</p>
-            <p>最长连续贡献:{{times.longestContinuous}}日</p>
-            <p>最近连续贡献:{{times.latestContinuous}}日</p>
+            <p>最近一年贡献: {{ times.longest }} 次</p>
+            <p>最长连续贡献:{{ times.longestContinuous }}日</p>
+            <p>最近连续贡献:{{ times.latestContinuous }}日</p>
         </div>
     </div>
 </template>
@@ -59,14 +54,7 @@ export default {
             sliderValue: [0, 12]
         }
     },
-    props: {
-        profile: {
-            // eslint-disable-next-line vue/require-valid-default-prop
-            default: {},
-            type: Object
-        },
-        times:{},
-    },
+    props: ['profile', 'times'],
     mounted() {
         this.formatProblemData()
         this.init()
@@ -176,15 +164,17 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.users-header h3{
+.users-header h3 {
     font-size: 2em;
     line-height: 70px;
     text-align: left;
 }
-.contribution-describtion{
+
+.contribution-describtion {
     display: flex;
     column-gap: 50px;
 }
+
 .submission-chart {
     width: 820px;
     height: 180px;
