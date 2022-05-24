@@ -217,6 +217,10 @@ export default defineComponent({
           date: '2022-05-20',
           status: 1
         },
+        {
+          date: '2022-05-23',
+          status: 2
+        },
       ],
       size: 2,
       times: {

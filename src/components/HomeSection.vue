@@ -2,15 +2,16 @@
     <section class="home flex-center" id="home">
         <div class="home-container">
             <div class="media-icons">
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-weibo"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://www.facebook.com/people/Ye-Zhou/100024159512555/')"><i class="fa fa-facebook-f"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://www.instagram.com/uohzey0519/')"><i class="fa fa-instagram"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://twitter.com/uohzey')"><i class="fa fa-twitter"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://leetcode.cn/u/uohzey/')"><i
+                        class="fa fa-code"></i></a>
             </div>
             <div class="info">
                 <h2>你好, 我是叶舟!</h2>
-                <h3>一名即将毕业的普通大学生.</h3>
-                <p>这是我的个人主页. 我会在这里介绍我的论文成果,项目设计以及学习情况!</p>
+                <h3>一名即将毕业的研究生</h3>
+                <p>这是我的个人主页. 我会在这里分享我的论文成果,项目设计以及学习情况!</p>
                 <a href="" class="btn">Contace Me <i class="fa fa-arrow-circle-right"></i></a>
             </div>
             <div class="home-img">
@@ -31,12 +32,18 @@ export default defineComponent({
             document.querySelector(selector).scrollIntoView({
                 behavior: "smooth"
             })
+        },
+        goWeb(web) {
+            window.open(web)
         }
     }
 })
 </script>
 
 <style scoped>
+h2 {
+    text-align: left;
+}
 .home {
     position: relative;
     max-width: 1250px;
@@ -87,22 +94,6 @@ export default defineComponent({
     color: var(--third-color);
     font-size: var(--normal-font-size);
     /* max-width: 550px; */
-}
-
-.btn {
-    background: var(--second-color);
-    color: #fff;
-    font-size: var(--normal-font-size);
-    font-weight: 500;
-    display: inline-block;
-    margin-top: 25px;
-    padding: 20px 30px;
-    letter-spacing: 1px;
-    border-radius: 10px;
-}
-
-.btn:hover {
-    background: var(--hover-color);
 }
 
 .home-container .home-img {

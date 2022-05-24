@@ -7,21 +7,88 @@
             <div class="content">
                 <div class="skills-description">
                     <h3>Education & Skills</h3>
-                    <p></p>
+                    <p>六年的计算机专业学习,目前在实验室负责利用注意力机制对相关大气数据进行时间序列预测,同时设计并开发了一个前后端分离的大气数据库软件项目,以及维护了一个个人网站.</p>
                 </div>
                 <div class="skills-info education-all">
                     <div class="education">
-                        <h4><label>Education</label></h4>
+                        <h4><label>Education/教育经历</label></h4>
                         <ul class="edu-list">
                             <li class="item">
                                 <span class="year">2020-2023</span>
-                                <p>中国科学技术大学 计算机应用技术</p>
+                                <p><span>硕士</span> - 中国科学技术大学 计算机应用技术</p>
                             </li>
                         </ul>
                         <ul class="edu-list">
                             <li class="item">
                                 <span class="year">2016-2020</span>
-                                <p>安徽师范法大学 计算机科学与技术</p>
+                                <p><span>本科</span> - 安徽师范法大学 计算机科学与技术</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Skills/技能</label></h4>
+                        <ul class="bars">
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Java</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="line java"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="line javascript"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>HTML</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="line html"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="line css"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Python</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="line python"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Awards/项目</label></h4>
+                        <ul class="edu-list">
+                            <li class="item">
+                                <span class="year">2022</span>
+                                <p><span>个人主页</span></p>
+                                <p>基于 vue3 实现的纯前端个人主页项目</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2022</span>
+                                <p><span>论文</span>  `Prediction of Aerosol Extinction Coefficient in Coastal Areas of South China Based on Attention-BiLSTM` - JMSE - Q2</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2021</span>
+                                <p><span>大气数据库软件</span> </p>
+                                <p>基于 vue2 + express 实现的前后端分离的大气数据库软件项目, 主要特点:</p>
+                                <p>1. 重构了数据库表,大大优化了查询耗时</p>
+                                <p>2. 实现组件复用,大大减少了代码量,并减轻后期维护压力</p>
+                                <p>3. 实现路由懒加载,使首页加载速度更快,获得更好的用户体验</p>
+                                <p>4. 通过watch监听数据变化,实现表格自动渲染并实现表格懒加载</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2019</span>
+                                <p><span>美国大学生数学建模比赛</span>  - Finalist</p>
                             </li>
                         </ul>
                     </div>
@@ -33,8 +100,128 @@
 
 <script>
 import { defineComponent } from "@vue/runtime-core";
-
 export default defineComponent({
     name: "SkillsSection",
 })
 </script>
+
+<style scoped>
+.skills .container .content{
+    width:100%
+}
+.skills-description{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+.skills-description h3{
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.skills-info{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    margin:0 auto;
+}
+.skills-info h4 {
+    margin-bottom: 20px;
+}
+.skills-info h4 label {
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.education-all {
+    margin-bottom: 80px;
+}
+
+.edu-list .item {
+    text-align: left;
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--second-color);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.edu-list .item .year {
+    font-size: var(--small-font-size);
+    margin-bottom: 5px;
+}
+
+.edu-list .item p {
+    color:var(--third-color);
+    font-size: var(--small-font-size);
+}
+
+.edu-list .item p span {
+    text-align: left;
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.bar {
+    text-align: left;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: var(--small-font-size);
+}
+
+.bar .info span{
+    font-size: 500;
+}
+
+.bar .line {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: #c5cadf;
+    border-radius: 2px;
+}
+
+.bar .line:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+    
+}
+
+.bar .java:before{
+    width: 75%;
+}
+.bar .javascript:before{
+    width: 70%;
+}
+.bar .html:before{
+    width: 60%;
+}
+.bar .css:before{
+    width: 60%;
+}
+.bar .python:before{
+    width: 50%;
+}
+</style>
