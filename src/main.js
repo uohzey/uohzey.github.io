@@ -9,7 +9,6 @@ const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
 }
-
 //Navigation bar effects on scroll
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header")

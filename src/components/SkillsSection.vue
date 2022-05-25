@@ -21,7 +21,7 @@
                         <ul class="edu-list">
                             <li class="item">
                                 <span class="year">2016-2020</span>
-                                <p><span>本科</span> - 安徽师范法大学 计算机科学与技术</p>
+                                <p><span>本科</span> - 安徽师范大学 计算机科学与技术</p>
                             </li>
                         </ul>
                     </div>
