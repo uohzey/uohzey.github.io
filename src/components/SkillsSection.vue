@@ -11,7 +11,7 @@
                 </div>
                 <div class="skills-info education-all">
                     <div class="education">
-                        <h4><label>Education/教育经历</label></h4>
+                        <h4><label>Education</label></h4>
                         <ul class="edu-list">
                             <li class="item">
                                 <span class="year">2020-2023</span>
@@ -26,7 +26,7 @@
                         </ul>
                     </div>
                     <div class="education">
-                        <h4><label>Skills/技能</label></h4>
+                        <h4><label>Skills</label></h4>
                         <ul class="bars">
                             <li class="bar">
                                 <div class="info">
@@ -66,31 +66,61 @@
                         </ul>
                     </div>
                     <div class="education">
-                        <h4><label>Awards/项目</label></h4>
+                        <h4><label>Awards</label></h4>
                         <ul class="edu-list">
                             <li class="item">
-                                <span class="year">2022</span>
-                                <p><span>个人主页</span></p>
-                                <p>基于 vue3 实现的纯前端个人主页项目</p>
+                                <span class="year">2021 - 2022</span>
+                                <p><span>软件著作</span> 海上大气光学数据库软件</p>
                             </li>
                             <li class="item">
-                                <span class="year">2022</span>
-                                <p><span>论文</span>  `Prediction of Aerosol Extinction Coefficient in Coastal Areas of South China Based on Attention-BiLSTM` - JMSE - Q2</p>
+                                <span class="year">2021 - 2022</span>
+                                <p><span>奖学金</span> USTC - 一等奖学金</p>
                             </li>
                             <li class="item">
-                                <span class="year">2021</span>
-                                <p><span>大气数据库软件</span> </p>
-                                <p>基于 vue2 + express 实现的前后端分离的大气数据库软件项目, 主要特点:</p>
-                                <p>1. 重构了数据库表,大大优化了查询耗时</p>
-                                <p>2. 实现组件复用,大大减少了代码量,并减轻后期维护压力</p>
-                                <p>3. 实现路由懒加载,使首页加载速度更快,获得更好的用户体验</p>
-                                <p>4. 通过watch监听数据变化,实现表格自动渲染并实现表格懒加载</p>
+                                <span class="year">2016 - 2020</span>
+                                <p><span>奖学金</span> AHNU - 二等奖学金 * 4</p>
                             </li>
                             <li class="item">
                                 <span class="year">2019</span>
-                                <p><span>美国大学生数学建模比赛</span>  - Finalist</p>
+                                <p><span>美国大学生数学建模比赛</span> - Finalist</p>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div class="skills-description">
+                    <h3>Project & Paper</h3>
+                </div>
+                <div class="skills-info">
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>大气数据库软件</h3>
+                            <h5>Part Time | Project</h5>
+                            <p><span class="year">2021 - 2022</span></p>
+                        </div>
+                        <div class="hr"></div>
+                        <p>基于 vue2 + express 实现的前后端分离的大气数据库软件项目, 主要特点:</p>
+                        <p>1. 重构了数据库表,大大优化了查询耗时</p>
+                        <p>2. 实现组件复用,大大减少了代码量,并减轻后期维护压力</p>
+                        <p>3. 实现路由懒加载,使首页加载速度更快,获得更好的用户体验</p>
+                        <p>4. 通过watch监听数据变化,实现表格自动渲染并实现表格懒加载</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>个人主页</h3>
+                            <h5>Part Time | Project</h5>
+                            <p><span class="year">2021 - 2022</span></p>
+                        </div>
+                        <div class="hr"></div>
+                        <p></p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>消光系数预测(Deep Learning)</h3>
+                            <h5>Part Time | Paper</h5>
+                            <p><span class="year">2021 - 2022</span></p>
+                        </div>
+                        <div class="hr"></div>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -106,27 +136,32 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.skills .container .content{
-    width:100%
+.skills .container .content {
+    width: 100%
 }
-.skills-description{
+
+.skills-description {
     max-width: 700px;
     margin-bottom: 50px;
 }
-.skills-description h3{
+
+.skills-description h3 {
     font-size: 2em;
     margin-bottom: 5px;
 }
-.skills-info{
+
+.skills-info {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 .skills-info h4 {
     margin-bottom: 20px;
 }
+
 .skills-info h4 label {
     background: var(--second-color);
     color: #fff;
@@ -157,7 +192,7 @@ export default defineComponent({
 }
 
 .edu-list .item p {
-    color:var(--third-color);
+    color: var(--third-color);
     font-size: var(--small-font-size);
 }
 
@@ -178,7 +213,7 @@ export default defineComponent({
     transition: .3s ease;
 }
 
-.bar .info{
+.bar .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +221,7 @@ export default defineComponent({
     font-size: var(--small-font-size);
 }
 
-.bar .info span{
+.bar .info span {
     font-size: 500;
 }
 
@@ -206,22 +241,67 @@ export default defineComponent({
     left: 0;
     background: var(--second-color);
     border-radius: 2px;
-    
+
 }
 
-.bar .java:before{
+.bar .java:before {
     width: 75%;
 }
-.bar .javascript:before{
+
+.bar .javascript:before {
     width: 70%;
 }
-.bar .html:before{
+
+.bar .html:before {
     width: 60%;
 }
-.bar .css:before{
+
+.bar .css:before {
     width: 60%;
 }
-.bar .python:before{
+
+.bar .python:before {
     width: 50%;
+}
+
+.edu-list .item:hover,
+.bar:hover,
+.experience-card:hover {
+    transform: scale(1.03);
+}
+
+.experience-card {
+    background: var(--card-bg-color);
+    border-bottom: 3px solid var(--second-color);
+    padding: 35px;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    transition: .3s ease;
+}
+
+.experience-card .uppper {
+    line-height: 30px;
+}
+
+.experience-card h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.experience-card h5 {
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.experience-card span {
+    color: var(--third-color);
+}
+
+.experience-card .hr {
+    width: 100%;
+    height: 2px;
+    background: var(--line-color);
+    margin: 10px 0 22px;
 }
 </style>

@@ -2,9 +2,13 @@
     <section class="home flex-center" id="home">
         <div class="home-container">
             <div class="media-icons">
-                <a href="javascript:void(0);" @click="goWeb('https://www.facebook.com/people/Ye-Zhou/100024159512555/')"><i class="fa fa-facebook-f"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://www.instagram.com/uohzey0519/')"><i class="fa fa-instagram"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://twitter.com/uohzey')"><i class="fa fa-twitter"></i></a>
+                <a href="javascript:void(0);"
+                    @click="goWeb('https://www.facebook.com/people/Ye-Zhou/100024159512555/')"><i
+                        class="fa fa-facebook-f"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://www.instagram.com/uohzey0519/')"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://twitter.com/uohzey')"><i
+                        class="fa fa-twitter"></i></a>
                 <a href="javascript:void(0);" @click="goWeb('https://leetcode.cn/u/uohzey/')"><i
                         class="fa fa-code"></i></a>
             </div>
@@ -18,7 +22,8 @@
                 <img src="@/images/xiaoxue1.jpg" alt="">
             </div>
         </div>
-        <a href="#about" class="scroll-down">Scroll Down<i class="fa fa-arrow-down"></i></a>
+        <a href="javascript:void(0);" class="scroll-down" @click="goAnchor('#home')">Scroll Down<i
+                class="fa fa-arrow-down"></i></a>
     </section>
 </template>
 
@@ -44,6 +49,7 @@ export default defineComponent({
 h2 {
     text-align: left;
 }
+
 .home {
     position: relative;
     max-width: 1250px;
