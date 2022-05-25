@@ -11,6 +11,8 @@
                         class="fa fa-twitter"></i></a>
                 <a href="javascript:void(0);" @click="goWeb('https://leetcode.cn/u/uohzey/')"><i
                         class="fa fa-code"></i></a>
+                <a href="javascript:void(0);" @click="goWeb('https://github.com/uohzey/')"><i
+                        class="fa fa-github"></i></a>
             </div>
             <div class="info">
                 <h2>你好, 我是叶舟!</h2>
