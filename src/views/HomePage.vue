@@ -5,7 +5,6 @@
     <home-section />
     <about-section />
     <skills-section />
-    <submission-chart :profile="profile" :times="times" />
   </body>
 </template>
 
@@ -14,11 +13,10 @@ import MyHeader from "@/components/MyHeader.vue"
 import HomeSection from "@/components/HomeSection.vue"
 import AboutSection from "@/components/AboutSection.vue"
 import SkillsSection from "@/components/SkillsSection.vue"
-import SubmissionChart from "@/components/SubmissionChart.vue"
 import { defineComponent } from "@vue/runtime-core"
 export default defineComponent({
   name: 'HomePage',
-  components: { MyHeader, AboutSection, HomeSection, SkillsSection, SubmissionChart },
+  components: { MyHeader, AboutSection, HomeSection, SkillsSection },
   data() {
     return {
       profile: [
