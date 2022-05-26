@@ -94,32 +94,55 @@
                     <div class="experience-card">
                         <div class="upper">
                             <h3>大气数据库软件</h3>
-                            <h5>Part Time | Project</h5>
+                            <h5>Front End & Back End | Project</h5>
                             <p><span class="year">2021 - 2022</span></p>
                         </div>
                         <div class="hr"></div>
+                        <h4 class="disp">
+                            <a href="javascript:void(0);" @click="goWeb('https://gitee.com/ye_zhou/vue_project')"><label
+                                    class="address">前端地址</label></a>
+                        </h4>
+                        <h4 class="disp">
+                            <a href="javascript:void(0);" @click="goWeb('https://gitee.com/ye_zhou/server')"><label
+                                    class="address">后端地址</label></a>
+                        </h4>
                         <p>基于 vue2 + express 实现的前后端分离的大气数据库软件项目, 主要特点:</p>
                         <p>1. 重构了数据库表,大大优化了查询耗时</p>
                         <p>2. 实现组件复用,大大减少了代码量,并减轻后期维护压力</p>
                         <p>3. 实现路由懒加载,使首页加载速度更快,获得更好的用户体验</p>
                         <p>4. 通过watch监听数据变化,实现表格自动渲染并实现表格懒加载</p>
+
                     </div>
                     <div class="experience-card">
                         <div class="upper">
                             <h3>个人主页</h3>
-                            <h5>Part Time | Project</h5>
+                            <h5>Front End | Project</h5>
                             <p><span class="year">2021 - 2022</span></p>
                         </div>
                         <div class="hr"></div>
-                        <p></p>
+                        <h4>
+                            <a href="javascript:void(0);"
+                                @click="goWeb('https://github.com/uohzey/personal-page')"><label
+                                    class="address">项目地址</label></a>
+                        </h4>
+                        <p>基于vue3的纯前端个人主页项目.</p>
+
                     </div>
                     <div class="experience-card">
                         <div class="upper">
-                            <h3>消光系数预测(Deep Learning)</h3>
-                            <h5>Part Time | Paper</h5>
+                            <h3>消光系数预测</h3>
+                            <h5>Deep Learning | Paper</h5>
                             <p><span class="year">2021 - 2022</span></p>
                         </div>
                         <div class="hr"></div>
+                        <h4>
+                            <a href="javascript:void(0);"
+                                @click="goWeb('https://www.mdpi.com/2077-1312/10/4/545')"><label
+                                    class="address">论文地址</label></a>
+                        </h4>
+                        <p>使用Attention-BiLSTM对茂名地区的消光系数进行预测,技术要点:</p>
+                        <p>1. 通过将注意力机制作用于特征向量,使其适用于时间序列预测任务</p>
+                        <p>2. 模型主体选择BiLSTM,解决一般RNN存在的长期依赖问题</p>
                         <p></p>
                     </div>
                 </div>
@@ -132,6 +155,11 @@
 import { defineComponent } from "@vue/runtime-core";
 export default defineComponent({
     name: "SkillsSection",
+    methods: {
+        goWeb(web) {
+            window.open(web)
+        }
+    }
 })
 </script>
 
