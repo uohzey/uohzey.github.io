@@ -7,8 +7,7 @@
                     <a href="javascript:void(0)" @click="goAnchor('#home')">Home</a>
                     <a href="javascript:void(0)" @click="goAnchor('#about')">About</a>
                     <a href="javascript:void(0)" @click="goAnchor('#skills')">Skills</a>
-                    <a href="javascript:void(0)" @click="goAnchor('#services')">Services</a>
-                    <a href="javascript:void(0)" @click="goAnchor('#contact')">Contact</a>
+                    <a href="javascript:void(0)" @click="goAnchor('#latest')">Latest</a>
                 </div>
             </div>
         </div>
@@ -71,7 +70,7 @@ header.sticky .nav-bar {
 
 .nav-items a {
     color: var(--first-color);
-    font-size: var(--normal-font-size);
+    font-size: .8rem;
     font-weight: 500;
 }
 

@@ -159,3 +159,45 @@ h5 {
     position: relative;
     flex-direction: column;
 }
+
+/* ==========bar=========== */
+.bar {
+    text-align: left;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: var(--small-font-size);
+}
+
+.bar .info span {
+    font-size: 500;
+}
+
+.bar .line {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: #c5cadf;
+    border-radius: 2px;
+}
+
+.bar .line:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+
+}

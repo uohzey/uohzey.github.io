@@ -1,30 +1,36 @@
 <template>
     <section class="home flex-center" id="home">
         <div class="home-container">
-            <div class="media-icons">
-                <a href="javascript:void(0);"
-                    @click="goWeb('https://www.facebook.com/people/Ye-Zhou/100024159512555/')"><i
-                        class="fa fa-facebook-f"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://www.instagram.com/uohzey0519/')"><i
-                        class="fa fa-instagram"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://twitter.com/uohzey')"><i
-                        class="fa fa-twitter"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://leetcode.cn/u/uohzey/')"><i
-                        class="fa fa-code"></i></a>
-                <a href="javascript:void(0);" @click="goWeb('https://github.com/uohzey/')"><i
-                        class="fa fa-github"></i></a>
+            <div class="intro">
+                <div class="media-icons">
+                    <a href="javascript:void(0);"
+                        @click="goWeb('https://www.facebook.com/people/Ye-Zhou/100024159512555/')"><i
+                            class="fa fa-facebook-f"></i></a>
+                    <a href="javascript:void(0);" @click="goWeb('https://www.instagram.com/uohzey0519/')"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="javascript:void(0);" @click="goWeb('https://twitter.com/uohzey')"><i
+                            class="fa fa-twitter"></i></a>
+                    <a href="javascript:void(0);" @click="goWeb('https://leetcode.cn/u/uohzey/')"><i
+                            class="fa fa-code"></i></a>
+                    <a href="javascript:void(0);" @click="goWeb('https://github.com/uohzey/')"><i
+                            class="fa fa-github"></i></a>
+                </div>
+                <div class="info">
+                    <h2>你好, 我是叶舟!</h2>
+                    <h3>一名即将毕业的研究生</h3>
+                    <p>这是我的个人主页. 我会在这里分享我的论文成果,项目设计,学习情况和最近的待办事项. </p>
+                    <p> 本主页主要参考了Coding Show的响应式个人网站布局,并使用vue重新进行了部分设计.</p>
+                    <a href="" class="btn">Contace Me <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
             </div>
-            <div class="info">
-                <h2>你好, 我是叶舟!</h2>
-                <h3>一名即将毕业的研究生</h3>
-                <p>这是我的个人主页. 我会在这里分享我的论文成果,项目设计以及学习情况!</p>
-                <a href="" class="btn">Contace Me <i class="fa fa-arrow-circle-right"></i></a>
+            <div>
+                <div class="home-img">
+                    <img src="@/images/Personal.jpg" alt="">
+                </div>
             </div>
-            <div class="home-img">
-                <img src="@/images/xiaoxue1.jpg" alt="">
-            </div>
+
         </div>
-        <a href="javascript:void(0);" class="scroll-down" @click="goAnchor('#home')">Scroll Down<i
+        <a href="javascript:void(0);" class="scroll-down" @click="goAnchor('#about')">Scroll Down<i
                 class="fa fa-arrow-down"></i></a>
     </section>
 </template>
@@ -63,10 +69,17 @@ h2 {
 }
 
 .home .home-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
     width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.home .home-container .intro {
+    display: flex;
 }
 
 .home-container .media-icons {
@@ -80,6 +93,7 @@ h2 {
     font-size: 1.5em;
     margin: 10px 0;
 }
+
 
 .home-container .media-icons a:hover {
     color: var(--hover-color);
@@ -109,7 +123,7 @@ h2 {
 }
 
 .home-container .home-img img {
-    width: 90%;
+    width: 60%;
     transform: translate(0, 0);
 }
 

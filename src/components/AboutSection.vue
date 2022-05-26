@@ -5,31 +5,36 @@
             <h1 class="section-title-01">About me</h1>
             <h2 class="section-title-02">About me</h2>
             <div class="content flex-center">
-                <div class="about-img">
+                <!-- <div class="about-img">
                     <img src="@/images/about-img.jpg" alt="">
-                </div>
+                </div> -->
                 <div class="about-info">
-                    <div class="description">
-                        <h3>I'm uohzey</h3>
-                        <h4>A student now studing at <span>USTC</span>, major in <span>Computer Applications</span>
-                        </h4>
-                        <p></p>
+                    <div>
+                        <div class="description">
+                            <h3>我叫叶舟</h3>
+                            <h4>一名<span>中国科学技术大学</span>的学生, 专业是<span>计算机应用技术. </span>
+                            </h4>
+                            <p></p>
+                        </div>
+                        <ul class="professional-list">
+                            <li class="list-item">
+                                <h3>5+</h3>
+                                <span>Years of<br>Experience</span>
+                            </li>
+                            <li class="list-item">
+                                <h3>3K+</h3>
+                                <span>Happy<br>Customers</span>
+                            </li>
+                            <li class="list-item">
+                                <h3>5+</h3>
+                                <span>Success<br>Projects</span>
+                            </li>
+                        </ul>
+                        <a href="" class="btn">Download CV <i class="fa fa-download"></i></a>
                     </div>
-                    <ul class="professional-list">
-                        <li class="list-item">
-                            <h3>5+</h3>
-                            <span>Years of<br>Experience</span>
-                        </li>
-                        <li class="list-item">
-                            <h3>3K+</h3>
-                            <span>Happy<br>Customers</span>
-                        </li>
-                        <li class="list-item">
-                            <h3>5+</h3>
-                            <span>Success<br>Projects</span>
-                        </li>
-                    </ul>
-                    <a href="" class="btn">Download CV <i class="fa fa-download"></i></a>
+                    <div>
+                        <p>grid-template-columns</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,6 +63,14 @@ export default defineComponent({
     min-width: 500px;
     max-height: 90%;
     border-radius: 10px;
+}
+
+.about-info {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
 }
 
 .about-info .description {
