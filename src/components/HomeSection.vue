@@ -72,7 +72,7 @@ h2 {
     display: grid;
     align-items: center;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 100%;
     margin: 0 auto;
     gap: 20px;
