@@ -16,24 +16,7 @@
                             </h4>
                             <p></p>
                         </div>
-                        <ul class="professional-list">
-                            <li class="list-item">
-                                <h3>5+</h3>
-                                <span>Years of<br>Experience</span>
-                            </li>
-                            <li class="list-item">
-                                <h3>3K+</h3>
-                                <span>Happy<br>Customers</span>
-                            </li>
-                            <li class="list-item">
-                                <h3>5+</h3>
-                                <span>Success<br>Projects</span>
-                            </li>
-                        </ul>
                         <a href="" class="btn">Download CV <i class="fa fa-download"></i></a>
-                    </div>
-                    <div>
-                        <p>grid-template-columns</p>
                     </div>
                 </div>
             </div>
