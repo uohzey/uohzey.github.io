@@ -77,6 +77,9 @@
                                 <span>4. 继续参加力扣周赛,争取稳3题!</span>
                             </div>
                             <div class="info">
+                                <span>5. 试用copliot</span>
+                            </div>
+                            <div class="info">
                                 <span>...</span>
                             </div>
                         </li>
