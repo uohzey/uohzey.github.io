@@ -23,7 +23,7 @@ export default defineComponent({
             document.querySelector(selector).scrollIntoView({
                 behavior: "smooth"
             })
-        }
+        },
     }
 })
 </script>
@@ -72,6 +72,10 @@ header.sticky .nav-bar {
     color: var(--first-color);
     font-size: .8rem;
     font-weight: 500;
+}
+
+.nav-items a.active {
+    color: var(--second-color);
 }
 
 .nav-items a:not(:last-child) {

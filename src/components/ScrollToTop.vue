@@ -26,7 +26,7 @@ export default defineComponent({
         handleScroll() {
             const scrollToTopBtn = document.querySelector('.scrollToTop-btn');
             scrollToTopBtn.classList.toggle('active', window.scrollY > 300);
-        }
+        },
     },
 })
 </script>
