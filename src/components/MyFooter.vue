@@ -122,4 +122,10 @@ footer a {
     font-size: 1.5em;
     margin: 20px;
 }
+
+.footer-copyright p {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    margin-top: 50px;
+}
 </style>
