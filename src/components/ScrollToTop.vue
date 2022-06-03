@@ -1,5 +1,5 @@
 <template>
-    <div class="scrollToTop-btn flex-center" @click="scrollToTop">
+    <div class="scrollToTop-btn flex-center" @click="scrollToTop" ref="scrollToTop">
         <i class="fa fa-arrow-up"></i>
     </div>
 </template>
@@ -24,7 +24,7 @@ export default defineComponent({
             window.scrollTo(0, 0);
         },
         handleScroll() {
-            const scrollToTopBtn = document.querySelector('.scrollToTop-btn');
+            const scrollToTopBtn = this.$refs.scrollToTop
             scrollToTopBtn.classList.toggle('active', window.scrollY > 300);
         },
     },

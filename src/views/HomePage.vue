@@ -1,14 +1,14 @@
-<template>
+<template  ref="reference">
 
   <body>
-    <my-header />
-    <home-section />
-    <about-section />
-    <skills-section />
-    <latest-section />
-    <scroll-to-top />
-    <my-footer />
-    <theme-change />
+    <my-header ref="myHeader"/>
+    <home-section ref="homeSection"/>
+    <about-section/>
+    <skills-section ref="skillsSection"/>
+    <latest-section ref="latestSection"/>
+    <scroll-to-top ref="scrollToTop"/>
+    <my-footer ref="myFooter"/>
+    <theme-change ref="themeChange"/>
   </body>
 </template>
 

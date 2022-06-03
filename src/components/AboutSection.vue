@@ -1,6 +1,6 @@
-<template>
+<template ref="aboutSection">
     <!--=========About section=========-->
-    <section class="about section" id="about">
+    <section class="about section" id="about" >
         <div class="container flex-center">
             <h1 class="section-title-01">About me</h1>
             <h2 class="section-title-02">About me</h2>

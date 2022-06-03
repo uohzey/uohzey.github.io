@@ -1,5 +1,5 @@
 <template>
-    <div class="theme-btn flex-center" @click="changeTheme">
+    <div class="theme-btn flex-center" @click="changeTheme" ref="themeBtn">
         <i class="fa fa-sun-o"></i>
         <i class="fa fa-moon-o"></i>
     </div>
@@ -13,7 +13,11 @@ export default defineComponent({
     methods: {
         changeTheme() {
             const body = document.querySelector("body");
-            const theme = document.querySelector(".theme-btn");
+            setTimeout(()=>{
+                const test = this.$refs.aboutSection
+                console.log(test);
+            }, 0)
+            const theme = this.$refs.themeBtn
             const isDark = body.classList.contains("dark");
             if (isDark) {
                 body.classList.remove("dark");
