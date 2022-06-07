@@ -31,6 +31,8 @@
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
 
+
+
 }
 
 .dark {
@@ -80,7 +82,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
