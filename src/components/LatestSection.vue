@@ -22,7 +22,7 @@
               <li class="bar">
                 <div class="info">
                   <span>Java 核心技术 卷Ⅰ</span>
-                  <span>15%</span>
+                  <span>40%</span>
                 </div>
                 <div class="line core-java-volume1"></div>
               </li>
@@ -258,7 +258,7 @@ export default defineComponent({
 }
 
 .bar .core-java-volume1:before {
-  width: 15%;
+  width: 40%;
 }
 
 .bar .java-offer:before {

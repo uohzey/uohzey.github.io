@@ -158,6 +158,24 @@
             <p>2. 模型主体选择BiLSTM,解决一般RNN存在的长期依赖问题</p>
             <p></p>
           </div>
+          <div class="experience-card">
+            <div class="upper">
+              <h3>谷粒商城项目实战</h3>
+              <h5>Front End & Back End | Project</h5>
+              <p><span class="year">2021 - 2022</span></p>
+            </div>
+            <div class="hr"></div>
+            <h4>
+              <a href="javascript:void(0);" @click="goWeb()"
+                ><label class="address">项目地址</label></a
+              >
+            </h4>
+            <p>实现尚硅谷谷粒商城项目,高并发与微服务架构</p>
+            <p>前端: Vue + Element-ui</p>
+            <p>后端: Springboot + Mybatis + Redis + Mysql</p>
+            <p>1. 开发谷粒商城项目,通过Generator自动生成前端代码.</p>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
@@ -275,6 +293,7 @@ export default defineComponent({
   border-bottom: 3px solid var(--second-color);
   padding: 35px;
   border-radius: 6px;
+  height: 450px;
   box-shadow: var(--box-shadow);
   transition: 0.3s ease;
 }

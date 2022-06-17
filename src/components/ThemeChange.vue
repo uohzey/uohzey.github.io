@@ -13,6 +13,7 @@ export default defineComponent({
   methods: {
     changeTheme() {
       const body = document.querySelector("body");
+
       const theme = this.$refs.themeBtn;
       const isDark = body.classList.contains("dark");
       if (isDark) {
