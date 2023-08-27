@@ -75,7 +75,7 @@
                 <p><span>软件著作</span> 海上大气光学数据库软件</p>
               </li>
               <li class="item">
-                <span class="year">2021 - 2022</span>
+                <span class="year">2021 - 2023</span>
                 <p><span>奖学金</span> USTC - 一等奖学金 * 3</p>
               </li>
               <li class="item">
