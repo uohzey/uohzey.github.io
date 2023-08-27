@@ -76,7 +76,7 @@
               </li>
               <li class="item">
                 <span class="year">2021 - 2022</span>
-                <p><span>奖学金</span> USTC - 一等奖学金</p>
+                <p><span>奖学金</span> USTC - 一等奖学金 * 3</p>
               </li>
               <li class="item">
                 <span class="year">2016 - 2020</span>
