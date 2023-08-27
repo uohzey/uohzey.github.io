@@ -2,7 +2,7 @@
     <div class="submission-chart">
         <div class="users-header">
             <h3>
-                gitee贡献度
+                github贡献度
             </h3>
         </div>
         <div class="calendar">
